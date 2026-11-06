@@ -7,7 +7,8 @@
   "websiteUrl": "https://docs.pingstack.io/mcp/overview/",
   "repository": {
     "url": "https://github.com/atomicvan/pingstack-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1447850350"
   },
   "icons": [
     {
