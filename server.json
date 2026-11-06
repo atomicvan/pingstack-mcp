@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.pingstack/pingstack",
+  "title": "Pingstack",
+  "description": "Cron, uptime, DNS, SSL and domain monitoring. Create checks and read incidents and uptime.",
+  "version": "1.1.0",
+  "websiteUrl": "https://docs.pingstack.io/mcp/overview/",
+  "repository": {
+    "url": "https://github.com/atomicvan/pingstack-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://app.pingstack.io/icon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    },
+    {
+      "src": "https://app.pingstack.io/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.pingstack.io/mcp"
+    }
+  ]
+}

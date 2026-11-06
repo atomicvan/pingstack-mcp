@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pingstack": {
+      "type": "http",
+      "url": "https://app.pingstack.io/mcp"
+    }
+  }
+}

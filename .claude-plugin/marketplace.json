@@ -1,0 +1,17 @@
+{
+  "name": "pingstack",
+  "description": "Pingstack's MCP server for cron, uptime, DNS, SSL and domain monitoring.",
+  "owner": {
+    "name": "Pingstack",
+    "email": "support@pingstack.io"
+  },
+  "plugins": [
+    {
+      "name": "pingstack",
+      "source": "./",
+      "description": "Cron, uptime, DNS, SSL and domain monitoring. Create checks and read incidents and uptime.",
+      "version": "1.1.0",
+      "category": "monitoring"
+    }
+  ]
+}
