@@ -12,12 +12,12 @@
   },
   "icons": [
     {
-      "src": "https://app.pingstack.io/icon.svg",
+      "src": "https://app.pingstack.io/mcp-icon.svg",
       "mimeType": "image/svg+xml",
       "sizes": ["any"]
     },
     {
-      "src": "https://app.pingstack.io/icon-512.png",
+      "src": "https://app.pingstack.io/mcp-icon-512.png",
       "mimeType": "image/png",
       "sizes": ["512x512"]
     }
