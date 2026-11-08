@@ -98,7 +98,14 @@ codex mcp login pingstack
 
 **Google Antigravity**
 
-Add this to `~/.gemini/config/mcp_config.json`, then click **Authenticate**
+Install it as a plugin in the Antigravity CLI. The app and IDE pick it up
+too, and you sign in in the browser the first time it connects:
+
+```sh
+agy plugin install https://github.com/atomicvan/pingstack-mcp
+```
+
+Or add this to `~/.gemini/config/mcp_config.json`, then click **Authenticate**
 next to `pingstack` under Agent settings → Customizations:
 
 ```json
