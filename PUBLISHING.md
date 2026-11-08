@@ -5,7 +5,7 @@ These steps are for Pingstack maintainers.
 ## Keep the versions in step
 
 `server.json`, `gemini-extension.json`, `.claude-plugin/plugin.json`,
-`.claude-plugin/marketplace.json` and `.antigravity-plugin/plugin.json` carry
+`.claude-plugin/marketplace.json` and `antigravity/plugin.json` carry
 the same version as the `version` the server reports in the app
 (`app/controllers/automation/mcp_controller.rb`). Bump all six together when
 the tools, the description or the setup changes.
@@ -64,9 +64,11 @@ installs straight from the default branch. The repository needs the
 
 ## Antigravity plugin
 
-`.antigravity-plugin/plugin.json` makes this repository an Antigravity plugin,
-and `mcp_config.json` is its server. Its logo is `assets/icon-transparent.svg`,
-because the Marketplace wants transparent padding that works on light and dark
-themes. Check it with `agy plugin validate --strict .` (no errors and no
-warnings) before tagging. Marketplace listings go through the partner intake
-form linked from https://antigravity.google/docs/build-plugins.
+The plugin lives in `antigravity/` (`plugin.json`, `mcp_config.json`, its own
+`README.md` and `assets/logo.svg`), apart from the repository root, because
+Antigravity's strict check warns about the Claude and Gemini files there. The
+logo is the color mark with transparent padding, so it works on light and dark
+themes. Before tagging, check it with
+`agy plugin validate --strict antigravity` (no errors and no warnings) and
+`agy plugin install ./antigravity`. Marketplace listings go through the
+partner intake form linked from https://antigravity.google/docs/build-plugins.
