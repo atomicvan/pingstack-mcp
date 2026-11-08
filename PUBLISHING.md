@@ -73,7 +73,7 @@ https://cursor.com/docs/reference/plugins.
 ## Antigravity plugin
 
 The plugin lives in `antigravity/` (`plugin.json`, `mcp_config.json`, its own
-`README.md` and `assets/logo.svg`), apart from the repository root, because
+`README.md` and `assets/logo.png`), apart from the repository root, because
 Antigravity's strict check warns about the Claude and Gemini files there. The
 logo is the color mark with transparent padding, so it works on light and dark
 themes. Before tagging, check it with

@@ -4,7 +4,7 @@
   "displayName": "Pingstack",
   "version": "1.1.0",
   "description": "Monitor cron jobs, websites, TCP ports, DNS records, SSL certificates and domain expiry. Create checks and read incidents, uptime and latency.",
-  "logo": "assets/logo.svg",
+  "logo": "assets/logo.png",
   "suggestedPrompts": [
     "Add a daily heartbeat for the backup job with a 15 minute grace period and attach it to the Infrastructure dashboard",
     "Which checks had incidents in the last 7 days, and how long were they down?",
