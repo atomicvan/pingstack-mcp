@@ -5,10 +5,10 @@ These steps are for Pingstack maintainers.
 ## Keep the versions in step
 
 `server.json`, `gemini-extension.json`, `.claude-plugin/plugin.json`,
-`.claude-plugin/marketplace.json` and `antigravity/plugin.json` carry
-the same version as the `version` the server reports in the app
-(`app/controllers/automation/mcp_controller.rb`). Bump all six together when
-the tools, the description or the setup changes.
+`.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and
+`antigravity/plugin.json` carry the same version as the `version` the server
+reports in the app (`app/controllers/automation/mcp_controller.rb`). Bump all
+seven together when the tools, the description or the setup changes.
 Registry versions can't be changed or reused once published.
 
 ## Official MCP Registry
@@ -61,6 +61,14 @@ and `.mcp.json` is the plugin's server. Check both with
 `gemini extensions install https://github.com/atomicvan/pingstack-mcp`
 installs straight from the default branch. The repository needs the
 `gemini-cli-extension` GitHub topic to appear in the extension gallery.
+
+## Cursor plugin
+
+`.cursor-plugin/plugin.json` makes this repository a Cursor plugin, and
+`mcp.json` (not Claude's `.mcp.json`) is its server. The logo is
+`assets/icon-512.png`. Cursor Marketplace submissions go through
+https://cursor.com/marketplace/publish; the checklist is in
+https://cursor.com/docs/reference/plugins.
 
 ## Antigravity plugin
 
