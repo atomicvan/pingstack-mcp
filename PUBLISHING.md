@@ -4,10 +4,11 @@ These steps are for Pingstack maintainers.
 
 ## Keep the versions in step
 
-`server.json`, `gemini-extension.json`, `.claude-plugin/plugin.json` and
-`.claude-plugin/marketplace.json` carry the same version as the `version` the
-server reports in the app (`app/controllers/automation/mcp_controller.rb`).
-Bump all five together when the tools, the description or the setup changes.
+`server.json`, `gemini-extension.json`, `.claude-plugin/plugin.json`,
+`.claude-plugin/marketplace.json` and `antigravity/plugin.json` carry
+the same version as the `version` the server reports in the app
+(`app/controllers/automation/mcp_controller.rb`). Bump all six together when
+the tools, the description or the setup changes.
 Registry versions can't be changed or reused once published.
 
 ## Official MCP Registry
@@ -60,3 +61,14 @@ and `.mcp.json` is the plugin's server. Check both with
 `gemini extensions install https://github.com/atomicvan/pingstack-mcp`
 installs straight from the default branch. The repository needs the
 `gemini-cli-extension` GitHub topic to appear in the extension gallery.
+
+## Antigravity plugin
+
+The plugin lives in `antigravity/` (`plugin.json`, `mcp_config.json`, its own
+`README.md` and `assets/logo.svg`), apart from the repository root, because
+Antigravity's strict check warns about the Claude and Gemini files there. The
+logo is the color mark with transparent padding, so it works on light and dark
+themes. Before tagging, check it with
+`agy plugin validate --strict antigravity` (no errors and no warnings) and
+`agy plugin install ./antigravity`. Marketplace listings go through the
+partner intake form linked from https://antigravity.google/docs/build-plugins.
