@@ -1,6 +1,6 @@
 # Pingstack MCP server
 
-<img src="assets/icon.svg" alt="Pingstack" width="96" align="right">
+<img src="assets/icon-512.png" alt="Pingstack" width="96" align="right">
 
 [Pingstack](https://pingstack.io) monitors cron jobs and scheduled tasks with
 heartbeat checks, and checks websites, TCP ports, DNS records, SSL
