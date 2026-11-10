@@ -9,16 +9,19 @@ This plugin connects Antigravity to Pingstack's remote MCP server at
 
 The first time the server connects, Antigravity opens your browser to sign in
 to Pingstack. An Owner or Admin approves the connection and picks its
-permissions. Heartbeat URL access is off by default.
+permissions. Heartbeat URL access, pausing, deleting and unpublishing are off
+by default.
 
 ## What your agent can do
 
 - Create and update heartbeat, website, TCP, DNS, SSL certificate and domain checks
-- Create dashboards and attach, detach and reorder checks on them
-- List incidents and read uptime, daily history, run history and latency
+- Create dashboards, organize them into sections and publish them as status pages
+- Create notification groups from people on your account and assign them to checks
+- List incidents with their causes, post incident updates, and read uptime, daily history, run history and latency
 - Read your plan's limits and usage
+- Pause and delete, when you turn those permissions on
 
-It can't delete anything, publish a status page, pause checks or buy anything.
+It can't invite people, add notification channels or buy anything.
 
 ## Example prompts
 
