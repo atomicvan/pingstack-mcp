@@ -7,8 +7,8 @@ These steps are for Pingstack maintainers.
 `server.json`, `gemini-extension.json`, `.claude-plugin/plugin.json`,
 `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and
 `antigravity/plugin.json` carry the same version as the `version` the server
-reports in the app (`app/controllers/automation/mcp_controller.rb`). Bump all
-seven together when the tools, the description or the setup changes.
+reports in the app (`Automation::Tools::VERSION` in
+`app/services/automation/tools.rb`). Bump all seven together when the tools, the description or the setup changes.
 Registry versions can't be changed or reused once published.
 
 ## Official MCP Registry
@@ -55,6 +55,15 @@ curl "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.pingstack/
 `.claude-plugin/marketplace.json` makes this repository a plugin marketplace,
 and `.mcp.json` is the plugin's server. Check both with
 `claude plugin validate .` before tagging.
+
+## Skills
+
+The `skills` folder holds one folder per skill, each with a `SKILL.md`. Claude
+Code and Cursor both find them there without a manifest entry. Keep each
+skill's `name` equal to its folder name, in lowercase with hyphens, and keep
+the frontmatter to `name` and `description` so both clients accept it. Skills
+name the server's tools, so update them when a tool is renamed or removed.
+`claude plugin validate .` checks them along with the plugin.
 
 ## Gemini CLI
 
