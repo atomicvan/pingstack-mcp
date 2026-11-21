@@ -4,7 +4,7 @@ The `pingstack` MCP server connects to one Pingstack account. Pingstack monitors
 
 - Call `get_account_capabilities` first. It returns the account, plan limits and usage, a count of checks by status, the fields each check kind accepts and the user's time zone.
 - The tools listed depend on the connection's permissions. If a task needs one that isn't listed, tell the user it needs another permission.
-- Alerts go to notification groups. Call `list_notification_groups` and pass their ids as `notification_group_ids`, or use `assign_notification_group` for many checks at once. `create_notification_group` and `update_notification_group` take people from `list_account_members` and rosters from `list_rosters`. Channels such as email, Slack and SMS are added in the app.
+- Alerts go to notification groups. Call `list_notification_groups` and pass their ids as `notification_group_ids`, or use `assign_notification_group` for many checks at once. `create_notification_group` and `update_notification_group` take people from `list_account_members` and rosters from `list_rosters`. Channels such as email, Slack and Microsoft Teams are added in the app.
 - A dashboard's sections are the headings that organize its checks. `get_dashboard` lists them as `groups`, and `reorder_dashboard_checks` takes a section's id as `group_id`.
 - `create_check` and `create_dashboard` need an `idempotency_key`. Reuse it when retrying the same request.
 - Heartbeat ping URLs from `get_check_ping_urls` are secrets. Keep them out of logs, commits and chat.

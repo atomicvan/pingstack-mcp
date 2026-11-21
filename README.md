@@ -196,7 +196,7 @@ These permissions start unticked when you approve a connection, each with a
 
 | Tool | What it does |
 | --- | --- |
-| `get_check_ping_urls` | A heartbeat check's ping URLs, which work as credentials |
+| `get_check_ping_urls` | A heartbeat check's ping, start and fail URLs, which work as credentials |
 | `pause_check`, `resume_check` | Pause a check and resume it. A paused check sends no alerts |
 | `delete_check` | Delete a check and its history for good |
 | `delete_dashboard` | Delete a private dashboard. Its checks are kept |
@@ -227,7 +227,7 @@ you want and Claude picks the skill. The skills are plain Markdown in the
 ## What it won't do
 
 The server can't invite people, add notification channels such as email, Slack
-or SMS, edit rosters, change status page branding or domains, change a check's
+or Microsoft Teams, edit rosters, change status page branding or domains, change a check's
 type or buy anything. Those stay in the Pingstack app. It never sends a test
 alert or runs a check on demand.
 
