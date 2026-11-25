@@ -2,6 +2,8 @@
 
 <img src="assets/icon-512.png" alt="Pingstack" width="96" align="right">
 
+[![Pingstack MCP connector](https://glama.ai/mcp/connectors/io.pingstack.app/pingstack/badges/score.svg)](https://glama.ai/mcp/connectors/io.pingstack.app/pingstack)
+
 [Pingstack](https://pingstack.io) monitors cron jobs and scheduled tasks with
 heartbeat checks, and checks websites, TCP ports, DNS records, SSL
 certificates and domain expiry. Its MCP server lets your coding agent set up
